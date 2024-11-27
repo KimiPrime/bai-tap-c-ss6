@@ -3,13 +3,11 @@
 int main() {
     int day, month;
 
-    // Nhap ngay va thang sinh
     printf("Nhap ngay sinh (1-31): ");
     scanf("%d", &day);
     printf("Nhap thang sinh (1-12): ");
     scanf("%d", &month);
 
-    // Kiem tra cung hoang dao
     if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
         printf("Cung hoang dao cua ban la: Bao Binh\n");
     } else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
